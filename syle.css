@@ -1,0 +1,62 @@
+/* Custom styles layered on top of Bootstrap */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Keep the footer at the bottom of short pages */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inner pages: push content below the fixed navbar and fill the space */
+.page-content {
+  flex: 1;
+  padding-top: 70px;
+}
+
+/* Hero (home page) */
+.hero {
+  flex: 1;
+  min-height: 100vh;
+  padding: 100px 0 60px; /* clears the fixed navbar */
+  background-color: #1b263b; /* solid fallback so white text is always readable */
+  background-image: linear-gradient(135deg, #0d1b2a 0%, #1b263b 50%, #415a77 100%);
+}
+
+/* Section headings */
+.section-title {
+  font-weight: 700;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 0.75rem auto 0;
+  background-color: var(--bs-primary);
+  border-radius: 2px;
+}
+
+/* Project cards */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Footer links */
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff !important;
+}
