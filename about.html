@@ -1,1 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="About me">
+    <title>About Me | My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Your Name</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="page-content">
+      <section class="py-5">
+        <div class="container">
+          <h1 class="section-title text-center mb-5">About Me</h1>
+          <div class="row align-items-center g-4">
+            <div class="col-md-4 text-center">
+              <img src="https://placehold.co/300x300?text=Your+Photo" class="img-fluid rounded-circle shadow" alt="Profile photo of Your Name">
+            </div>
+            <div class="col-md-8">
+              <p>
+                Write a short introduction here. Mention your major, your school,
+                what you are studying in IS202, and what kind of work interests you.
+              </p>
+              <p>
+                Add a second paragraph about your goals, hobbies, or what you hope
+                to learn this semester.
+              </p>
+              <a href="#" class="btn btn-outline-dark">Download Resume</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white-50 py-4 text-center">
+      <div class="container">
+        <p class="mb-2">
+          <a href="#" class="text-white-50 me-3">GitHub</a>
+          <a href="#" class="text-white-50 me-3">LinkedIn</a>
+          <a href="mailto:you@example.com" class="text-white-50">Email</a>
+        </p>
+        <small>&copy; <span id="year"></span> Your Name. IS202 Portfolio.</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
